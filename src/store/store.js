@@ -217,3 +217,9 @@ export const Points = atom({
         }
     ]
 })
+
+
+export const QRScannedData = atom({
+    key: 'kkk',
+    default: null
+})

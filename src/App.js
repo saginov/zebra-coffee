@@ -11,6 +11,9 @@ import Product from "./pages/Product";
 import CartPage from "./pages/Cart";
 import QRPage from "./pages/QRPage";
 import Payment from "./pages/Payment";
+import Cashier from "./pages/Cashier";
+import CashierCart from "./pages/CashierCart";
+import CashierMenu from "./pages/CashierMenu";
 
 
 
@@ -35,6 +38,10 @@ function App() {
             <Route path={':id/cart/qr'} element={<QRPage />} />
             <Route path={':id/payment'} element={<Payment />} />
 
+
+            <Route path={'cashier/scan'} element={<Cashier />} />
+            <Route path={'cashier/scan/cart'} element={<CashierCart />} />
+            <Route path={'cashier/menu'} element={<CashierMenu category={'Горячие напитки'} />} />
         </Route>
     </Routes>
   );
